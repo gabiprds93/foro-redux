@@ -35,7 +35,7 @@ const App = ({comments, index}) =>
         <p className="">NEW COMMENT</p>
         <form onSubmit = {onSubmit}>
           <FormGroup>
-            <FormControl
+            <input
               type="text"
               placeholder="Name"
               ref={e => (this.refInputName = e)}
@@ -43,7 +43,7 @@ const App = ({comments, index}) =>
             {console.log("this.refInputName", this.refInputName)}            
           </FormGroup>
           <FormGroup>
-            <FormControl
+            <input
               type="text"
               placeholder="Comment"
               ref={e => (this.refInputComment = e)}              
